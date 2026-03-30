@@ -1,0 +1,45 @@
+# Backend Java (Gradle)
+backend_java/.gradle/
+backend_java/build/
+backend_java/out/
+backend_java/.idea/
+backend_java/*.iml
+backend_java/*.iws
+backend_java/*.ipr
+backend_java/.settings/
+backend_java/.classpath
+backend_java/.project
+backend_java/bin/
+
+# Frontend Angular
+frontend-angular/node_modules/
+frontend-angular/dist/
+frontend-angular/.angular/
+frontend-angular/.env.local
+frontend-angular/.env.development.local
+frontend-angular/.env.test.local
+frontend-angular/.env.production.local
+frontend-angular/npm-debug.log*
+frontend-angular/yarn-debug.log*
+frontend-angular/yarn-error.log*
+
+# Database (Docker)
+database/mysql_data/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment variables
+.env
+.env.local

@@ -1,0 +1,34 @@
+package com.medicamentos.model;
+
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.hibernate.annotations.CreationTimestamp;
+
+import java.time.LocalDateTime;
+
+@Entity
+@Table(name = "medicamentos")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class Medicamento {
+    
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    
+    @Column(nullable = false, length = 200)
+    private String nombre;
+    
+    @Column(columnDefinition = "TEXT")
+    private String descripcion;
+    
+    @Column(name = "es_no_pos")
+    private Boolean esNoPos = false;
+    
+    @CreationTimestamp
+    @Column(name = "created_at", updatable = false)
+    private LocalDateTime createdAt;
+}
