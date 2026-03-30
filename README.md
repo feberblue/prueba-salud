@@ -126,7 +126,7 @@ docker compose version  # Debe mostrar Docker Compose version v2.x
 ### 1. Clonar el Repositorio
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/feberblue/prueba-salud
 cd pruebastecnicas
 ```
 
